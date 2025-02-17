@@ -11,11 +11,15 @@
             height: 100%;
             width: 100%;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
         }
         .full-screen-image {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            width: auto;
+            height: 50%; /* Ajuste conforme necessário */
+            object-fit: contain;
+            margin-bottom: 0;
         }
     </style>
 </head>
