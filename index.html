@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem do Gato</title>
+    <title>Meu Site</title>
     <style>
-        body, html {
+        * {
             margin: 0;
             padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
         .full-screen-image {
-            width: auto;
-            height: 50%; /* Ajuste conforme necessário */
-            object-fit: contain;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
             margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .full-screen-image {
+                width: auto;
+                height: 50%;
+                object-fit: contain;
+            }
         }
     </style>
 </head>
 <body>
-
-    <img src="cat.png" alt="Imagem do Gato" class="full-screen-image">
-
+    <img src="cat.png" alt="Imagem de um gato" class="full-screen-image">
 </body>
 </html>
